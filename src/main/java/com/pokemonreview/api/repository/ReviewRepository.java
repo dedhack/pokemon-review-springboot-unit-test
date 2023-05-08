@@ -7,5 +7,6 @@ import java.util.List;
 
 
 public interface ReviewRepository extends JpaRepository<Review, Integer> {
+    // Custom Queries
     List<Review> findByPokemonId(int pokemonId);
 }
